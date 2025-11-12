@@ -22,4 +22,7 @@ anyhow = "1.0"
 tracing = "0.1"
 
 # Optional middleware like CORS (we’ll use it later)
-tower-http = { version = "0.5", features = ["cors"] }
+tower-http = { version = "0.5", features = ["cors"] } 
+
+# Adds dotenv support
+dotenvy = "0.15"
