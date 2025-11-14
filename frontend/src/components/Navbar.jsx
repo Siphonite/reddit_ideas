@@ -10,7 +10,7 @@ function Navbar() {
 
       <div className="nav-right">
         <a
-          href="https://github.com/yourusername/yourrepo"
+          href="https://github.com/Siphonite/reddit_ideas"
           target="_blank"
           rel="noopener noreferrer"
           className="github-btn"
