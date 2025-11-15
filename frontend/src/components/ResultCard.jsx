@@ -1,16 +1,30 @@
+import React from "react";
 import "./ResultCard.css";
 
 function ResultCard({ result }) {
   return (
     <div className="result-card">
-      <h2>Generated Startup Idea</h2>
 
-      {Object.entries(result).map(([key, value]) => (
-        <div className="result-row" key={key}>
-          <strong>{key}</strong>
-          <p>{value}</p>
-        </div>
-      ))}
+      {/* Title FIRST */}
+      <div className="result-row">
+        <strong>Title</strong>
+        <p>{result.title}</p>
+      </div>
+
+      {/* Body SECOND */}
+      <div className="result-row">
+        <strong>Body</strong>
+        <p>{result.body}</p>
+      </div>
+
+      {/* Ideas THIRD */}
+      <div className="result-row">
+        <strong>Startup Ideas</strong>
+        <p style={{ whiteSpace: "pre-wrap" }}>
+          {result.ideas}
+        </p>
+      </div>
+
     </div>
   );
 }
